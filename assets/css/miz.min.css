@@ -26741,7 +26741,7 @@ dialog {
 
 .article-banner-weblog::after {
   content: "";
-  background-image: url("../../assets/media/images/component/Group 195.png");
+  background-image: url("../../assets/media/images/component/Group 195.webp");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -26979,7 +26979,7 @@ dialog {
 }
 .weblog-card.newest-column .feature-image::after {
   content: "";
-  background-image: url("../../assets/media/images/component/Group 195.png");
+  background-image: url("../../assets/media/images/component/Group 195.webp");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -26989,7 +26989,7 @@ dialog {
 }
 .weblog-card.newest-row .cover-image::after {
   content: "";
-  background-image: url("../../assets/media/images/component/Group 195.png");
+  background-image: url("../../assets/media/images/component/Group 195.webp");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
