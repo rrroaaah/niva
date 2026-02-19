@@ -1,6 +1,6 @@
 #mobile-products .banner-category::after{
   content: "";
-  background-image: url("../../assets/media/images/homepage/abc11.png");
+  background-image: url("../../assets/media/images/homepage/abc11.webp");
   background-repeat: no-repeat;
   position: absolute;
   background-size: 100% 100%;
@@ -16,7 +16,7 @@
 
 
 .bartt{
-  background-image: url(../../assets/media/images/homepage/frame.png);
+  background-image: url(../../assets/media/images/homepage/frame.webp);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -267,9 +267,7 @@ transition: 500ms all;
 
 
 @media screen and (width < 1400px) {
-    .image-mobile-products{
-    height: 458px;
-  }
+ 
 }
 
 @media screen and (width < 1200px) {
@@ -287,9 +285,7 @@ transition: 500ms all;
     scrollbar-color: #E80645 #F3F6F9;
   }
 
-  .image-mobile-products{
-    height: 430px;
-  }
+  
 }
 
 @media screen and (width < 992px) {
@@ -297,22 +293,14 @@ transition: 500ms all;
     height: 370px !important;
   }
 
- .image-mobile-products{
-    height: 375px;
-  }
 }
 
 
 @media screen and (width < 768px) {
-   .image-mobile-products{
-      height: 350px;
-    }
+
 }
 
 @media screen and (width < 576px) {
-    .image-mobile-products{
-      height: 340px;
-    }
 
   #credit-purchase .devicebanner:hover img {
     transform: translateY(70px);
