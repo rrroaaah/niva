@@ -41,13 +41,6 @@ const componentJson = {
             "category": "baner"
         }
     ],
-    "sale-banner": [
-        {
-            "code": "<div class=\"exclusive-sale-banner\">\r\n            <img class=\"wrapper-image\" src=\"./assets/media/images/component/Group 193.svg\" alt=\"\">\r\n            <a class=\"view-all\" href=\"#\"><i class=\"fas fa-angle-left\"></i>مشاهده همه</a>\r\n        </div>",
-            "icon": "",
-            "category": "baner"
-        }
-    ],
     "baner-mobile": [
         {
             "code": "<div class=\"baner-mobile position-relative\">\r\n        <h3 class=\"title\">موبایل</h3>\r\n        <img src=\"./assets/media/images/component/7ff6959341b2fa9850e5e896763203c2007ba5f0.webp\" alt=\"\" class=\"h-100\"\r\n            height=\"\" width=\"240px\">\r\n        <img src=\"./assets/media/images/component/بنر دسته لپ تاپ (1).webp\" alt=\"\" class=\"position-absolute\">\r\n    </div>",
