@@ -80,7 +80,7 @@ footer .top-line {
 }
 #mobile-products .banner-category::after {
   content: "";
-  background-image: url("../../assets/media/images/homepage/abc11.png");
+  background-image: url("../../assets/media/images/homepage/abc11.webp");
   background-repeat: no-repeat;
   position: absolute;
   background-size: 100% 100%;
@@ -95,7 +95,7 @@ footer .top-line {
 }
 
 .bartt {
-  background-image: url(../../assets/media/images/homepage/frame.png);
+  background-image: url(../../assets/media/images/homepage/frame.webp);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -349,11 +349,6 @@ footer .top-line {
   width: 50px !important;
 }
 
-@media screen and (width < 1400px) {
-  .image-mobile-products {
-    height: 458px;
-  }
-}
 @media screen and (width < 1200px) {
   #credit-purchase > div {
     grid-template-columns: 1fr;
@@ -366,27 +361,13 @@ footer .top-line {
     height: 100px;
     scrollbar-color: #E80645 #F3F6F9;
   }
-  .image-mobile-products {
-    height: 430px;
-  }
 }
 @media screen and (width < 992px) {
   #credit-purchase .slider-wrapper {
     height: 370px !important;
   }
-  .image-mobile-products {
-    height: 375px;
-  }
-}
-@media screen and (width < 768px) {
-  .image-mobile-products {
-    height: 350px;
-  }
 }
 @media screen and (width < 576px) {
-  .image-mobile-products {
-    height: 340px;
-  }
   #credit-purchase .devicebanner:hover img {
     transform: translateY(70px);
   }
