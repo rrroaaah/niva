@@ -310,11 +310,11 @@ dialog {
   font-family: var(--font-secondary), sans-serif, 'Courier New', Courier, monospace;
 }
 
-@media screen and (max-width: 1400px) {
-  html {
-    --html-font-size: 1rem;
-  }
+html {
+  --html-font-size: 1rem;
+  font-size: var(--html-font-size);
 }
+
 @media screen and (max-width: 1200px) {
   html {
     --html-font-size: 1rem;
@@ -11237,16 +11237,16 @@ dialog {
   letter-spacing: 12.5rem;
 }
 
+.txt-size-small, .rating-card .card-header .rating-count .description, .rating-card .card-header .rating-count .number, .progress-bar, .product-card .card-body .credit-purchase-box {
+  font-size: 0.625rem;
+}
+
 .txt-size-normal, .dropdown .dropdown-box, .dropdown .dropdown-menu, .dropdown .dropdown-menu > li > :not(:has(*)), .dropdown .dropdown-menu > li a, .dropdown .dropdown-menu .dropdown-submenu .dropdown-submenu-toggle, .call-product .container-price .wrapper-date .date, .product-qa .question-container .text-quesiton, .product-comment .information-comment .user-type, .product-comment .information-comment .date-time, .product-comment .features-container .features, button.product-button-feature.check-payment, button.product-button-feature.original, button.product-button-feature.fake, button.product-button-feature.warranty, button.product-button-feature.payable-credit, button.product-button-feature.installments, .accordion-group .accordion {
   font-size: 0.75rem;
 }
 
 .txt-size-subtitle, .product-comment .features-container .show-more .text-show-more, .rating-card .card-body .percentage-point .description-container .comment-number {
   font-size: 0.688rem;
-}
-
-.txt-size-small, .rating-card .card-header .rating-count .description, .rating-card .card-header .rating-count .number, .progress-bar, .product-card .card-body .credit-purchase-box {
-  font-size: 0.625rem;
 }
 
 .txt-size-big, .forign-product .wrapper-text-sale .wrapper-sale .txt-size-big, .unavailable .wrapper-unavailable .unavailable-text, .variable-product .product-main-content .product-main-content-buy .product-main-content-buy-text-send, .variable-product .container-sales-per-week .sales-per-week .sales-per-week-text, .call-product .container-price .last-price, .call-product .explanation-text, .call-product .wrapper-btn .wrapper-call .text-call, .product-toolbar .icons-box .label .label-name, .information-tooltip span.box, .product-qa .answer-container .btn-answer, .product-qa .answer-container .answer-description .user-name, .product-qa .answer-container .answer-description .user-name .user-type, .return-condition-box .description, .rating-card .card-footer .comments-number .description, .product-details .title, .product-category, .product-card .card-body .fast-shipping span, .product-card .card-body .btn-add-to-cart, .feature-description-box.text-type .title, .feature-description-box.text-type .description {
