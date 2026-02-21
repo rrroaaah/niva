@@ -310,11 +310,11 @@ dialog {
   font-family: var(--font-secondary), sans-serif, 'Courier New', Courier, monospace;
 }
 
-@media screen and (max-width: 1400px) {
-  html {
-    --html-font-size: 1rem;
-  }
+html {
+  --html-font-size: 1rem;
+  font-size: var(--html-font-size);
 }
+
 @media screen and (max-width: 1200px) {
   html {
     --html-font-size: 1rem;
