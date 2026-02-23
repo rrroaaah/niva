@@ -80,7 +80,7 @@ footer .top-line {
 }
 #mobile-products .banner-category::after {
   content: "";
-  background-image: url("../../assets/media/images/homepage/abc11.png");
+  background-image: url("../../assets/media/images/homepage/abc11.webp");
   background-repeat: no-repeat;
   position: absolute;
   background-size: 100% 100%;
@@ -95,7 +95,7 @@ footer .top-line {
 }
 
 .bartt {
-  background-image: url(../../assets/media/images/homepage/frame.png);
+  background-image: url(../../assets/media/images/homepage/frame.webp);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -349,11 +349,6 @@ footer .top-line {
   width: 50px !important;
 }
 
-@media screen and (width < 1400px) {
-  .image-mobile-products {
-    height: 458px;
-  }
-}
 @media screen and (width < 1200px) {
   #credit-purchase > div {
     grid-template-columns: 1fr;
@@ -366,32 +361,18 @@ footer .top-line {
     height: 100px;
     scrollbar-color: #E80645 #F3F6F9;
   }
-  .image-mobile-products {
-    height: 430px;
-  }
 }
 @media screen and (width < 992px) {
   #credit-purchase .slider-wrapper {
     height: 370px !important;
   }
-  .image-mobile-products {
-    height: 375px;
-  }
-}
-@media screen and (width < 768px) {
-  .image-mobile-products {
-    height: 350px;
-  }
 }
 @media screen and (width < 576px) {
-  .image-mobile-products {
-    height: 340px;
-  }
   #credit-purchase .devicebanner:hover img {
     transform: translateY(70px);
   }
   #credit-purchase .devicebanner img {
-    transform: translateY(30px);
+    transform: translateY(-20px);
   }
   #credit-purchase .devicebanner:hover .title {
     transform: translateY(60px);
@@ -1680,8 +1661,8 @@ header .time {
   align-items: center;
   justify-content: center;
   border-radius: 5px;
-  margin-left: 1px;
-  margin-right: 1px;
+  margin-inline-start: 1px;
+  margin-inline-end: 1px;
 }
 
 header .percent {
@@ -1690,7 +1671,7 @@ header .percent {
   justify-content: center;
   width: 13px;
   height: 13px;
-  margin-right: 3px;
+  margin-inline-start: 3px;
   padding-top: 3px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -1914,33 +1895,13 @@ header .megamenu > ul > .submenu-parent:hover > span {
     height: 15px;
   }
 }
-header .primary-part #profile:checked + .profile {
-  background-color: var(--button);
-  border-color: transparent;
+@media screen and (width = 992px) {
+  header form input {
+    padding: 0 !important;
+  }
 }
-
-header .primary-part #profile:checked + .profile > i,
-header .primary-part #profile:checked + .profile > svg {
-  color: white;
-  fill: white;
-}
-
-header .primary-part #profile:checked + .profile > div {
-  display: flex;
-}
-
-header .primary-part #profile + .profile > div {
-  width: 250px;
-  transform: translateY(100%);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-ring-shadow, 0 0 rgba(0, 0, 0, 0)), 0 1px 1px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.profile > div > a:hover {
-  background-color: #F0F0F1;
-}
-
-.profile > div > a .border-gray {
-  border-bottom-color: #F0F0F1;
+header .profile > div {
+  background-color: transparent !important;
 }
 
 /*# sourceMappingURL=style.min.css.map */
