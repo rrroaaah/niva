@@ -1457,49 +1457,46 @@ header .logo {
   width: 115px;
 }
 
-.hidden {
-  transform: translateY(-100%);
-}
-
-header form {
-  position: relative;
-}
-
-header form input {
-  width: 540px;
-  max-width: 540px;
-  border: none;
+header #searchBox #search {
+  border-style: none;
   outline: none;
   position: relative;
 }
 
-header form input:focus {
-  background-color: var(--secondary);
+header #searchBox {
+  position: relative;
   z-index: 100;
   display: flex !important;
 }
 
-header form:has(input:focus) + div.back {
-  display: block !important;
+header #searchBox ~ .backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
+  width: 0%;
+  height: 0%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 0;
+}
+
+header #searchBox.active ~ .backdrop {
   width: 100%;
   height: 100%;
-  top: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
   z-index: 99;
 }
 
-header form > div:last-child {
+header #searchBox.active .content {
+  display: flex !important;
+  min-width: fit-content;
+  transition: 200ms ease-out;
   position: absolute;
   bottom: -15px;
-  right: 0;
+  left: 0;
   z-index: 100;
   transform: translateY(100%);
-}
-
-header form:has(input:focus) > div:last-child {
-  display: flex !important;
+  opacity: 1;
 }
 
 header form .fire-svg {
@@ -1528,16 +1525,9 @@ header .line {
 header .primary-part {
   border-bottom: 1px solid #DDDDDD;
   top: 0;
-  right: 0;
+  left: 0;
   z-index: 100;
   height: 90px;
-}
-
-header .secondary-part {
-  top: 0;
-  box-shadow: 0px 6px 7px 0px rgba(135, 145, 172, 0.07);
-  z-index: 99;
-  transition: 100ms ease;
 }
 
 header .vertical-line {
@@ -1570,7 +1560,7 @@ header .secondary-part .hover-box > li:nth-child(n+2)::after {
   content: "";
   position: absolute;
   bottom: 0;
-  right: 0;
+  left: 0;
   width: 0%;
   height: 1.5px;
   border-radius: 100px;
@@ -1675,7 +1665,7 @@ header .percent {
   padding-top: 3px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  box-shadow: -3px 0px 4px -2px rgba(232, 6, 69, 0.6);
+  box-shadow: 3px 0px 4px -2px rgba(232, 6, 69, 0.6);
 }
 
 header .categories .megamenu .submenu-parent:hover .submenu {
@@ -1690,7 +1680,7 @@ header .categories .megamenu .submenu-parent .submenu {
   background-color: var(--background);
   width: calc(88vw - 4 * var(--space-factor));
   height: 100%;
-  box-shadow: -15px 15px 30px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 15px 15px 30px 2px rgba(0, 0, 0, 0.4);
 }
 
 header .megamenu > ul > li > img {
@@ -1699,24 +1689,8 @@ header .megamenu > ul > li > img {
 
 header .categories .megamenu > ul {
   border-bottom-right-radius: 15px;
-  box-shadow: 15px 15px 30px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: -15px 15px 30px 2px rgba(0, 0, 0, 0.4);
   width: calc(12vw - 4 * var(--space-factor));
-}
-
-.top-0 {
-  top: 0;
-}
-
-.bottom-0 {
-  bottom: 0;
-}
-
-.left-0 {
-  left: 0;
-}
-
-.right-0 {
-  right: 0;
 }
 
 header {
@@ -1828,10 +1802,19 @@ header .megamenu > ul > .submenu-parent:hover > span {
     opacity: 0;
     position: absolute;
   }
-  header form input:focus {
+  header #searchBox.active #search {
     position: fixed;
     width: 80%;
     top: 20px;
+    right: 50%;
+    transform: translateX(50%);
+    opacity: 1;
+    display: flex;
+  }
+  header #searchBox.active .content {
+    position: fixed;
+    width: 80%;
+    top: 13%;
     left: 50%;
     transform: translateX(-50%);
     opacity: 1;
@@ -1840,8 +1823,8 @@ header .megamenu > ul > .submenu-parent:hover > span {
     position: fixed;
     width: 80% !important;
     top: 100px;
-    transform: translateX(50%);
-    right: 50%;
+    transform: translateX(-50%);
+    left: 50%;
     max-width: 540px;
   }
   .w-lg-0 {
@@ -1881,9 +1864,9 @@ header .megamenu > ul > .submenu-parent:hover > span {
   header .categories .megamenu .submenu-parent .submenu {
     width: calc(65vw - 4 * var(--space-factor));
   }
-  .left-sm-0 {
-    right: unset;
-    left: 0;
+  .right-sm-0 {
+    left: unset;
+    right: 0;
   }
   header .categories .megamenu .submenu-parent .submenu ul {
     height: unset;
