@@ -1599,7 +1599,7 @@ header .categories {
 
 header .categories .megamenu {
   position: absolute;
-  left: 0;
+  right: 0;
   bottom: 0;
   transform: translateY(100%);
 }
@@ -1673,10 +1673,10 @@ header .categories .megamenu .submenu-parent:hover .submenu {
 }
 
 header .categories .megamenu .submenu-parent .submenu {
-  right: 1px;
-  transform: translateX(100%);
+  left: 1px;
+  transform: translateX(-100%);
   top: 0;
-  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
   background-color: var(--background);
   width: calc(88vw - 4 * var(--space-factor));
   height: 100%;
@@ -1688,7 +1688,7 @@ header .megamenu > ul > li > img {
 }
 
 header .categories .megamenu > ul {
-  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
   box-shadow: -15px 15px 30px 2px rgba(0, 0, 0, 0.4);
   width: calc(12vw - 4 * var(--space-factor));
 }
@@ -1726,7 +1726,7 @@ header .megamenu .submenu-parent:hover > div:first-child > img:last-child {
 }
 
 header .megamenu > ul > .submenu-parent:last-child {
-  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 header .megamenu > ul > .submenu-parent:first-child {
