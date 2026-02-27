@@ -13,19 +13,21 @@
 	</head>
 
 	<body class="font-primary">
-		<header id="header" class="section py-0 w-100 px-0 position-sticky top-0">
+		<header id="header" class="section py-0 w-100 pie-0 pis-0 position-sticky top-0">
 			<div class="container d-grid grid-1 w-100">
-				<div class="primary-part w-100 d-flex px-4 gap-5 gap-sm-2 flex-row align-items-center justify-content-space-between bg-color">
+				<div class="primary-part w-100 d-flex pie-4 pis-4 gap-5 gap-sm-2 flex-row align-items-center justify-content-space-between bg-color">
 					<div class="d-flex flex-row align-items-center justify-content-space-between gap-5 gap-sm-2">
-						<img src="./assets/media/images/header/logo-web1.webp" alt="" class="logo h-75" />
-						<form>
+						<a href="./index.html">
+							<img src="./assets/media/images/header/logo-web1.webp" alt="" class="logo h-75" />
+						</a>
+						<div id="searchBox">
 							<div class="d-lg-flex">
-								<input type="search" id="search" placeholder="نام محصول ، دسته بندی ...." class="bg-secondary-color py-4 px-5 radius-all-small w-lg-0 px-lg-0 py-lg-0" />
-								<label for="search" class="px-3 aspect-ratio-1x1 d-none d-lg-flex align-items-center justify-content-center radius-all-small bg-secondary-color w-fit-content">
+								<input type="search" id="search" placeholder="نام محصول ، دسته بندی ...." class="bg-secondary-color py-4 pie-5 pis-5 radius-all-small d-lg-none" />
+								<label for="search" class="pie-3 pis-3 aspect-ratio-1x1 d-none d-lg-flex align-items-center justify-content-center radius-all-small bg-secondary-color w-fit-content">
 									<i class="fa-solid fa-magnifying-glass txt-size-mid-title"></i>
 								</label>
 							</div>
-							<div class="flex-column align-items-start gap-4 px-2 pb-2 pt-5 d-none bg-secondary-color w-100 radius-all-small w-lg-100">
+							<div class="content flex-column align-items-start gap-4 px-2 pb-2 pt-5 d-none bg-secondary-color w-100 radius-all-small w-lg-100">
 								<div class="div align-items-center gap-2">
 									<img src="./assets/media/images/header/fire.svg" alt="" class="fire-svg" />
 									<span class="black-text txt-size-title font-weight-bold">جستجوهای پر طرفدار</span>
@@ -40,40 +42,40 @@
 								<div class="line"></div>
 								<span class="black-text txt-size-title font-weight-bold mb-10">آخرین جستجوهای شما</span>
 							</div>
-						</form>
-						<div class="back d-none"></div>
-						<a href="#" class="location-btn d-none d-sm-flex flex-row align-items-center radius-all-small px-3 py-3">
+						</div>
+						<div class="backdrop"></div>
+						<a href="#" class="location-btn d-sm-flex flex-row align-items-center radius-all-small pie-3 pis-3 py-3">
 							<i class="fa-solid fa-location-dot text-color"></i>
 						</a>
 					</div>
 
 					<div class="d-flex flex-row align-items-center gap-5 gap-sm-2">
 						<i class="fa-solid fa-bell text-color"></i>
-						<a href="#" class="d-flex flex-row align-items-center gap-2 gap-md-3 py-3 py-sm-3 px-4 bg-secondary-color radius-all-small">
+						<a href="#" class="d-flex flex-row align-items-center gap-2 gap-md-3 py-3 py-sm-3 pie-4 pis-4 bg-secondary-color radius-all-small">
 							<i class="fa-solid fa-arrow-right-to-bracket text-color d-sm-none"></i>
 							<span class="font-weight-bold text-color">وورود</span>
-							<div class="btn-line"></div>
-							<span class="font-weight-bold text-color">عضویت</span>
+							<div class="btn-line d-sm-none"></div>
+							<span class="font-weight-bold text-color d-sm-none">عضویت</span>
 						</a>
-						<a href="#" class="cart-button bg-btn-hover d-flex flex-row align-items-center gap-2 gap-md-3 py-3 py-sm-3 px-4 bg-secondary-color radius-all-small bg-button-color">
+						<a data-modal-id="cartProduct" href="#" class="modal-toggle cart-button bg-btn-hover d-flex flex-row align-items-center gap-2 gap-md-3 py-3 py-sm-3 pie-4 pis-4 bg-secondary-color radius-all-small bg-button-color">
 							<span class="button-text-color font-weight-bold">سبد‌خرید</span>
 							<i class="fa-solid fa-bag-shopping button-text-color d-sm-none"></i>
 						</a>
 					</div>
 				</div>
 
-				<div class="secondary-part px-4 w-100 bg-color d-flex flex-row align-items-center justify-content-space-between">
+				<div class="secondary-part pie-4 pis-4 w-100 bg-color d-flex flex-row align-items-center justify-content-space-between">
 					<nav>
 						<ul class="hover-box d-flex flex-row align-items-stretch gap-6 gap-lg-4 gap-md-6 gap-sm-3">
-							<li class="categories d-flex flex-row gap-4 align-items-center py-6 px-md-4 px-sm-3">
+							<li class="categories d-flex flex-row gap-4 align-items-center py-6 pie-md-4 pis-md-4 pie-sm-3 pis-sm-3">
 								<i class="fa-solid fa-bars primary-color"></i>
 								<span class="black-text txt-size-big font-weight-bold d-md-none">دسته بندی محصولات</span>
 								<div class="megamenu d-none flex-row align-items-stretch">
 									<ul class="d-flex flex-column bg-secondary-color position-relative">
-										<li class="submenu-parent px-sm-2 py-xl-3 d-flex flex-row align-items-center py-4 px-5 gap-2">
+										<li class="submenu-parent pie-sm-2 pis-sm-2 py-xl-3 d-flex flex-row align-items-center py-4 pie-5 pis-5 gap-2">
 											<i class="fa-solid fa-mobile text-color"></i>
 											<span class="text-color txt-size-mid-title font-weight-bold">موبایل</span>
-											<div class="submenu one position-absolute d-flex flex-column align-items-stretch gap-6 px-10 py-12">
+											<div class="submenu one position-absolute d-flex flex-column align-items-stretch gap-6 pie-1 pis-10 py-12">
 												<span class="txt-size-mid-title text-color font-weight-bold line-height-3">مشاهده همه محصولات موبایل</span>
 												<ul class="h-100 d-flex flex-column flex-wrap gap-3">
 													<li class="parent">
@@ -148,10 +150,10 @@
 												</ul>
 											</div>
 										</li>
-										<li class="submenu-parent px-sm-2 py-xl-3 d-flex flex-row align-items-center py-4 px-5 gap-2">
+										<li class="submenu-parent pie-sm-2 pis-sm-2 py-xl-3 d-flex flex-row align-items-center py-4 pie-5 pis-5 gap-2">
 											<i class="fa-solid fa-laptop text-color"></i>
 											<span class="text-color txt-size-mid-title font-weight-bold">لپ تاپ</span>
-											<div class="submenu two position-absolute d-none flex-column align-items-stretch gap-6 px-10 py-12">
+											<div class="submenu two position-absolute d-none flex-column align-items-stretch gap-6 pie-1 pis-10 py-12">
 												<span class="txt-size-mid-title text-color font-weight-bold line-height-3">مشاهده همه محصولات لپ تاپ</span>
 												<ul class="h-100 d-flex flex-column flex-wrap gap-3">
 													<li class="parent">
@@ -236,10 +238,10 @@
 												</ul>
 											</div>
 										</li>
-										<li class="submenu-parent px-sm-2 py-xl-3 d-flex flex-row align-items-center py-4 px-5 gap-2">
+										<li class="submenu-parent pie-sm-2 pis-sm-2 py-xl-3 d-flex flex-row align-items-center py-4 pie-5 pis-5 gap-2">
 											<i class="fa-solid fa-headphones text-color"></i>
 											<span class="text-color txt-size-mid-title font-weight-bold">هدفون</span>
-											<div class="submenu three position-absolute d-none flex-column align-items-stretch gap-6 px-10 py-12">
+											<div class="submenu three position-absolute d-none flex-column align-items-stretch gap-6 pie-1 pis-10 py-12">
 												<span class="txt-size-mid-title text-color font-weight-bold line-height-3">مشاهده همه محصولات هدفون</span>
 												<ul class="h-100 d-flex flex-column flex-wrap gap-3">
 													<li class="parent">
@@ -296,10 +298,10 @@
 												</ul>
 											</div>
 										</li>
-										<li class="submenu-parent px-sm-2 py-xl-3 d-flex flex-row align-items-center py-4 px-5 gap-2">
+										<li class="submenu-parent pie-sm-2 pis-sm-2 py-xl-3 d-flex flex-row align-items-center py-4 pie-5 pis-5 gap-2">
 											<i class="fa-solid fa-gamepad text-color"></i>
 											<span class="text-color txt-size-mid-title font-weight-bold">گیمینگ</span>
-											<div class="submenu four position-absolute d-none flex-column align-items-stretch gap-6 px-10 py-12">
+											<div class="submenu four position-absolute d-none flex-column align-items-stretch gap-6 pie-1 pis-10 py-12">
 												<span class="txt-size-mid-title text-color font-weight-bold line-height-3">مشاهده همه محصولات گیمینگ</span>
 												<ul class="h-100 d-flex flex-column flex-wrap gap-3">
 													<li class="parent">
@@ -361,10 +363,10 @@
 												</ul>
 											</div>
 										</li>
-										<li class="submenu-parent px-sm-2 py-xl-3 d-flex flex-row align-items-center py-4 px-5 gap-2">
+										<li class="submenu-parent pie-sm-2 pis-sm-2 py-xl-3 d-flex flex-row align-items-center py-4 pie-5 pis-5 gap-2">
 											<i class="fa-solid fa-clock text-color"></i>
 											<span class="text-color txt-size-mid-title font-weight-bold">ساعت هوشمند</span>
-											<div class="submenu five position-absolute d-none flex-column align-items-stretch gap-6 px-10 py-12">
+											<div class="submenu five position-absolute d-none flex-column align-items-stretch gap-6 pie-1 pis-10 py-12">
 												<span class="txt-size-mid-title text-color font-weight-bold line-height-3">مشاهده همه محصولات ساعت هوشمند</span>
 												<ul class="h-100 d-flex flex-column flex-wrap gap-3">
 													<li class="parent">
@@ -423,10 +425,10 @@
 												</ul>
 											</div>
 										</li>
-										<li class="submenu-parent px-sm-2 py-xl-3 d-flex flex-row align-items-center py-4 px-5 gap-2">
+										<li class="submenu-parent pie-sm-2 pis-sm-2 py-xl-3 d-flex flex-row align-items-center py-4 pie-5 pis-5 gap-2">
 											<i class="fa-solid fa-speaker text-color"></i>
 											<span class="text-color txt-size-mid-title font-weight-bold">اسپیکر</span>
-											<div class="submenu six position-absolute d-none flex-column align-items-stretch gap-6 px-10 py-12">
+											<div class="submenu six position-absolute d-none flex-column align-items-stretch gap-6 pie-1 pis-10 py-12">
 												<span class="txt-size-mid-title text-color font-weight-bold line-height-3">مشاهده همه محصولات اسپیکر</span>
 												<ul class="h-100 d-flex flex-column flex-wrap gap-3">
 													<li class="parent">
@@ -485,10 +487,10 @@
 												</ul>
 											</div>
 										</li>
-										<li class="submenu-parent px-sm-2 py-xl-3 d-flex flex-row align-items-center py-4 px-5 gap-2">
+										<li class="submenu-parent pie-sm-2 pis-sm-2 py-xl-3 d-flex flex-row align-items-center py-4 pie-5 pis-5 gap-2">
 											<i class="fa-solid fa-battery-full text-color"></i>
 											<span class="text-color txt-size-mid-title font-weight-bold">پاوربانک</span>
-											<div class="submenu seven position-absolute d-none flex-column align-items-stretch gap-6 px-10 py-12">
+											<div class="submenu seven position-absolute d-none flex-column align-items-stretch gap-6 pie-1 pis-10 py-12">
 												<span class="txt-size-mid-title text-color font-weight-bold line-height-3">مشاهده همه محصولات پاور بانک</span>
 												<ul class="h-100 d-flex flex-column flex-wrap gap-3">
 													<li class="parent">
@@ -552,10 +554,10 @@
 												</ul>
 											</div>
 										</li>
-										<li class="submenu-parent px-sm-2 py-xl-3 d-flex flex-row align-items-center py-4 px-5 gap-2">
+										<li class="submenu-parent pie-sm-2 pis-sm-2 py-xl-3 d-flex flex-row align-items-center py-4 pie-5 pis-5 gap-2">
 											<i class="fa-solid fa-tablet-screen-button text-color"></i>
 											<span class="text-color txt-size-mid-title font-weight-bold">تبلت</span>
-											<div class="submenu eight position-absolute d-none flex-column align-items-stretch gap-6 px-10 py-12">
+											<div class="submenu eight position-absolute d-none flex-column align-items-stretch gap-6 pie-1 pis-10 py-12">
 												<span class="txt-size-mid-title text-color font-weight-bold line-height-3">مشاهده همه محصولات تبلت</span>
 												<ul class="h-100 d-flex flex-column flex-wrap gap-3">
 													<li class="parent">
@@ -618,10 +620,10 @@
 												</ul>
 											</div>
 										</li>
-										<li class="submenu-parent px-sm-2 py-xl-3 d-flex flex-row align-items-center py-4 px-5 gap-2">
+										<li class="submenu-parent pie-sm-2 pis-sm-2 py-xl-3 d-flex flex-row align-items-center py-4 pie-5 pis-5 gap-2">
 											<i class="fa-solid fa-desktop text-color"></i>
 											<span class="text-color txt-size-mid-title font-weight-bold">کامپیوتر</span>
-											<div class="submenu nine position-absolute d-none flex-column align-items-stretch gap-6 px-10 py-12">
+											<div class="submenu nine position-absolute d-none flex-column align-items-stretch gap-6 pie-1 pis-10 py-12">
 												<span class="txt-size-mid-title text-color font-weight-bold line-height-3">مشاهده همه محصولات کامپیوتر</span>
 												<ul class="h-100 d-flex flex-column flex-wrap gap-3">
 													<li class="parent">
@@ -685,7 +687,7 @@
 							</li>
 							<div class="vertical-line"></div>
 							<li class="d-flex flex-row align-items-center">
-								<a href="#" class="d-flex flex-row align-items-center gap-2">
+								<a href="./index.html" class="d-flex flex-row align-items-center gap-2">
 									<span class="txt-size-title font-weight-bold text-color">صفحه اصلی</span>
 								</a>
 							</li>
@@ -697,7 +699,7 @@
 							<li class="d-flex flex-row gap-2 align-items-center">
 								<span class="text-color txt-size-big font-weight-bold">انواع صفحات محصول</span>
 								<i class="fa-solid fa-chevron-down txt-size-normal text-color"></i>
-								<ul class="submenu-hover position-absolute bottom-0 right-0 left-sm-0 pr-8 pl-16 pl-xl-0 px-xl-8 py-8 bg-color d-none flex-column align-items-start gap-6 gap-xl-4">
+								<ul class="submenu-hover position-absolute bottom-0 right-0 left-sm-0 pis-8 pie-16 pie-xl-0 pie-xl-8 pis-xl-8 py-8 bg-color d-none flex-column align-items-start gap-6 gap-xl-4">
 									<li>
 										<a href="./pages/simple-product.html" class="text-color txt-size-title font-weight-bold">محصول ساده</a>
 									</li>
@@ -721,7 +723,7 @@
 							<li class="d-flex flex-row gap-2 align-items-center">
 								<span class="text-color txt-size-big font-weight-bold">دیگر صفحات</span>
 								<i class="fa-solid fa-chevron-down txt-size-normal text-color"></i>
-								<ul class="submenu-hover position-absolute w-submenu bottom-0 right-0 left-sm-0 pr-8 pl-16 pl-xl-0 px-xl-8 py-8 bg-color d-none flex-column flex-wrap gap-6 gap-xl-4">
+								<ul class="submenu-hover position-absolute w-submenu bottom-0 right-0 left-sm-0 pis-8 pie-16 pie-xl-0 pie-xl-8 pis-xl-8 py-8 bg-color d-none flex-column flex-wrap gap-6 gap-xl-4">
 									<li>
 										<a href="./pages/shop.html" class="text-color txt-size-title font-weight-bold">صفحه فروشگاه</a>
 									</li>
@@ -773,12 +775,12 @@
 							<div class="vertical-line"></div>
 
 							<li class="d-flex flex-row gap-2 align-items-center">
-								<a href="#" class="text-color txt-size-big font-weight-bold">فروشنده شو!</a>
+								<a href="./pages/law.html" class="text-color txt-size-big font-weight-bold">فروشنده شو!</a>
 							</li>
 						</ul>
 					</nav>
 
-					<a href="#" class="location-btn d-flex flex-row align-items-center gap-2 px-8 py-3 radius-all-small px-sm-2 py-sm-2 d-sm-none">
+					<a href="#" class="location-btn d-flex flex-row align-items-center gap-2 pie-8 pis-8 py-3 radius-all-small pie-sm-2 pis-sm-2 py-sm-2 d-sm-none">
 						<span class="text-color font-weight-bold txt-size-title d-sm-none">شهر خود را وارد کنید</span>
 						<i class="fa-solid fa-location-dot text-color"></i>
 					</a>
@@ -4000,7 +4002,7 @@
 
 		<dialog id="cartProduct" class="modal-container cart-modal">
 			<div class="modal-content d-flex justify-content-center align-items-center">
-				<div class="box d-flex flex-column bg-color radius-all-large p-8 w-30 w-lg-50 w-sm-75">
+				<div class="box d-flex flex-column bg-color radius-all-large p-8 w-40 w-lg-50 w-sm-75">
 					<i class="fa-solid fa-close modal-close secondary-text-color align-items-end"></i>
 					<div class="radius-all-medium border-color bw-1 border-style-solid mt-8 p-4">
 						<div class="d-flex gap-4">
@@ -4059,7 +4061,7 @@
 									<span class="shadow-1"></span>
 									<span class="shadow-2"></span>
 									<span class="shadow-3"></span>
-									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/baner 2.webp" alt="" />
+									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/homepage/baner 2.webp" alt="" />
 									<div class="w-100 h-100 position-absolute top-0 right-0 px-3 py-3 d-flex flex-column align-items-center justify-content-space-between">
 										<div class="w-100 h-100 d-flex flex-column">
 											<div class="story-timelines grid-3">
@@ -4069,7 +4071,7 @@
 											</div>
 											<div class="d-flex flex-row align-items-center gap-4 z-index-10">
 												<a href="#" class="product-img w-20 p-2 radius-all-small aspect-ratio-1x1 bg-secondary-color d-flex align-items-center">
-													<img src="./assets/media/images/Frame-19-300x300.webp" alt="" class="w-100" />
+													<img src="./assets/media/images/homepage/Frame-19-300x300.webp" alt="" class="w-100" />
 												</a>
 												<a href="#" class="product-name radius-all-full secondary-color w-100 ellipsis-1 py-2 px-3 txt-size-normal font-weight-bold">لپ تاپ مک بوک ایر اپل مدل MacBook Air MRYT</a>
 												<div class="modal-close">
@@ -4101,7 +4103,7 @@
 									<span class="shadow-1"></span>
 									<span class="shadow-2"></span>
 									<span class="shadow-3"></span>
-									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/14.webp" alt="" />
+									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/homepage/14.webp" alt="" />
 									<div class="w-100 h-100 position-absolute top-0 right-0 px-3 py-3 d-flex flex-column align-items-center justify-content-space-between">
 										<div class="w-100 h-100 d-flex flex-column">
 											<div class="story-timelines grid-3">
@@ -4111,7 +4113,7 @@
 											</div>
 											<div class="d-flex flex-row align-items-center gap-4 z-index-10">
 												<a href="#" class="product-img w-20 p-2 radius-all-small aspect-ratio-1x1 bg-secondary-color d-flex align-items-center">
-													<img src="./assets/media/images/Frame-19-300x300.webp" alt="" class="w-100" />
+													<img src="./assets/media/images/homepage/Frame-19-300x300.webp" alt="" class="w-100" />
 												</a>
 												<a href="#" class="product-name radius-all-full secondary-color w-100 ellipsis-1 py-2 px-3 txt-size-normal font-weight-bold">لپ تاپ مک بوک ایر اپل مدل MacBook Air MRYT</a>
 												<div class="modal-close">
@@ -4142,7 +4144,7 @@
 									<span class="shadow-1"></span>
 									<span class="shadow-2"></span>
 									<span class="shadow-3"></span>
-									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/14.webp" alt="" />
+									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/homepage/14.webp" alt="" />
 									<div class="w-100 h-100 position-absolute top-0 right-0 px-3 py-3 d-flex flex-column align-items-center justify-content-space-between">
 										<div class="w-100 h-100 d-flex flex-column">
 											<div class="story-timelines grid-3">
@@ -4152,7 +4154,7 @@
 											</div>
 											<div class="d-flex flex-row align-items-center gap-4 z-index-10">
 												<a href="#" class="product-img w-20 p-2 radius-all-small aspect-ratio-1x1 bg-secondary-color d-flex align-items-center">
-													<img src="./assets/media/images/Frame-19-300x300.webp" alt="" class="w-100" />
+													<img src="./assets/media/images/homepage/Frame-19-300x300.webp" alt="" class="w-100" />
 												</a>
 												<a href="#" class="product-name radius-all-full secondary-color w-100 ellipsis-1 py-2 px-3 txt-size-normal font-weight-bold">لپ تاپ مک بوک ایر اپل مدل MacBook Air MRYT</a>
 												<div class="modal-close">
@@ -4193,7 +4195,7 @@
 									<span class="shadow-1"></span>
 									<span class="shadow-2"></span>
 									<span class="shadow-3"></span>
-									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/baner 2.webp" alt="" />
+									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/homepage/baner 2.webp" alt="" />
 									<div class="w-100 h-100 position-absolute top-0 right-0 px-3 py-3 d-flex flex-column align-items-center justify-content-space-between">
 										<div class="w-100 h-100 d-flex flex-column">
 											<div class="story-timelines grid-3">
@@ -4203,7 +4205,7 @@
 											</div>
 											<div class="d-flex flex-row align-items-center gap-4 z-index-10">
 												<a href="#" class="product-img w-20 p-2 radius-all-small aspect-ratio-1x1 bg-secondary-color d-flex align-items-center">
-													<img src="./assets/media/images/Frame-19-300x300.webp" alt="" class="w-100" />
+													<img src="./assets/media/images/homepage/Frame-19-300x300.webp" alt="" class="w-100" />
 												</a>
 												<a href="#" class="product-name radius-all-full secondary-color w-100 ellipsis-1 py-2 px-3 txt-size-normal font-weight-bold">لپ تاپ مک بوک ایر اپل مدل MacBook Air MRYT</a>
 												<div class="modal-close">
@@ -4235,7 +4237,7 @@
 									<span class="shadow-1"></span>
 									<span class="shadow-2"></span>
 									<span class="shadow-3"></span>
-									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/14.webp" alt="" />
+									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/homepage/14.webp" alt="" />
 									<div class="w-100 h-100 position-absolute top-0 right-0 px-3 py-3 d-flex flex-column align-items-center justify-content-space-between">
 										<div class="w-100 h-100 d-flex flex-column">
 											<div class="story-timelines grid-3">
@@ -4245,7 +4247,7 @@
 											</div>
 											<div class="d-flex flex-row align-items-center gap-4 z-index-10">
 												<a href="#" class="product-img w-20 p-2 radius-all-small aspect-ratio-1x1 bg-secondary-color d-flex align-items-center">
-													<img src="./assets/media/images/Frame-19-300x300.webp" alt="" class="w-100" />
+													<img src="./assets/media/images/homepage/Frame-19-300x300.webp" alt="" class="w-100" />
 												</a>
 												<a href="#" class="product-name radius-all-full secondary-color w-100 ellipsis-1 py-2 px-3 txt-size-normal font-weight-bold">لپ تاپ مک بوک ایر اپل مدل MacBook Air MRYT</a>
 												<div class="modal-close">
@@ -4276,7 +4278,7 @@
 									<span class="shadow-1"></span>
 									<span class="shadow-2"></span>
 									<span class="shadow-3"></span>
-									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/14.webp" alt="" />
+									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/homepage/14.webp" alt="" />
 									<div class="w-100 h-100 position-absolute top-0 right-0 px-3 py-3 d-flex flex-column align-items-center justify-content-space-between">
 										<div class="w-100 h-100 d-flex flex-column">
 											<div class="story-timelines grid-3">
@@ -4286,7 +4288,7 @@
 											</div>
 											<div class="d-flex flex-row align-items-center gap-4 z-index-10">
 												<a href="#" class="product-img w-20 p-2 radius-all-small aspect-ratio-1x1 bg-secondary-color d-flex align-items-center">
-													<img src="./assets/media/images/Frame-19-300x300.webp" alt="" class="w-100" />
+													<img src="./assets/media/images/homepage/Frame-19-300x300.webp" alt="" class="w-100" />
 												</a>
 												<a href="#" class="product-name radius-all-full secondary-color w-100 ellipsis-1 py-2 px-3 txt-size-normal font-weight-bold">لپ تاپ مک بوک ایر اپل مدل MacBook Air MRYT</a>
 												<div class="modal-close">
@@ -4327,7 +4329,7 @@
 									<span class="shadow-1"></span>
 									<span class="shadow-2"></span>
 									<span class="shadow-3"></span>
-									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/baner 2.webp" alt="" />
+									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/homepage/baner 2.webp" alt="" />
 									<div class="w-100 h-100 position-absolute top-0 right-0 px-3 py-3 d-flex flex-column align-items-center justify-content-space-between">
 										<div class="w-100 h-100 d-flex flex-column">
 											<div class="story-timelines grid-3">
@@ -4337,7 +4339,7 @@
 											</div>
 											<div class="d-flex flex-row align-items-center gap-4 z-index-10">
 												<a href="#" class="product-img w-20 p-2 radius-all-small aspect-ratio-1x1 bg-secondary-color d-flex align-items-center">
-													<img src="./assets/media/images/Frame-19-300x300.webp" alt="" class="w-100" />
+													<img src="./assets/media/images/homepage/Frame-19-300x300.webp" alt="" class="w-100" />
 												</a>
 												<a href="#" class="product-name radius-all-full secondary-color w-100 ellipsis-1 py-2 px-3 txt-size-normal font-weight-bold">لپ تاپ مک بوک ایر اپل مدل MacBook Air MRYT</a>
 												<div class="modal-close">
@@ -4369,7 +4371,7 @@
 									<span class="shadow-1"></span>
 									<span class="shadow-2"></span>
 									<span class="shadow-3"></span>
-									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/14.webp" alt="" />
+									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/homepage/14.webp" alt="" />
 									<div class="w-100 h-100 position-absolute top-0 right-0 px-3 py-3 d-flex flex-column align-items-center justify-content-space-between">
 										<div class="w-100 h-100 d-flex flex-column">
 											<div class="story-timelines grid-3">
@@ -4379,7 +4381,7 @@
 											</div>
 											<div class="d-flex flex-row align-items-center gap-4 z-index-10">
 												<a href="#" class="product-img w-20 p-2 radius-all-small aspect-ratio-1x1 bg-secondary-color d-flex align-items-center">
-													<img src="./assets/media/images/Frame-19-300x300.webp" alt="" class="w-100" />
+													<img src="./assets/media/images/homepage/Frame-19-300x300.webp" alt="" class="w-100" />
 												</a>
 												<a href="#" class="product-name radius-all-full secondary-color w-100 ellipsis-1 py-2 px-3 txt-size-normal font-weight-bold">لپ تاپ مک بوک ایر اپل مدل MacBook Air MRYT</a>
 												<div class="modal-close">
@@ -4410,7 +4412,7 @@
 									<span class="shadow-1"></span>
 									<span class="shadow-2"></span>
 									<span class="shadow-3"></span>
-									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/14.webp" alt="" />
+									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/homepage/14.webp" alt="" />
 									<div class="w-100 h-100 position-absolute top-0 right-0 px-3 py-3 d-flex flex-column align-items-center justify-content-space-between">
 										<div class="w-100 h-100 d-flex flex-column">
 											<div class="story-timelines grid-3">
@@ -4420,7 +4422,7 @@
 											</div>
 											<div class="d-flex flex-row align-items-center gap-4 z-index-10">
 												<a href="#" class="product-img w-20 p-2 radius-all-small aspect-ratio-1x1 bg-secondary-color d-flex align-items-center">
-													<img src="./assets/media/images/Frame-19-300x300.webp" alt="" class="w-100" />
+													<img src="./assets/media/images/homepage/Frame-19-300x300.webp" alt="" class="w-100" />
 												</a>
 												<a href="#" class="product-name radius-all-full secondary-color w-100 ellipsis-1 py-2 px-3 txt-size-normal font-weight-bold">لپ تاپ مک بوک ایر اپل مدل MacBook Air MRYT</a>
 												<div class="modal-close">
@@ -4461,7 +4463,7 @@
 									<span class="shadow-1"></span>
 									<span class="shadow-2"></span>
 									<span class="shadow-3"></span>
-									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/baner 2.webp" alt="" />
+									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/homepage/baner 2.webp" alt="" />
 									<div class="w-100 h-100 position-absolute top-0 right-0 px-3 py-3 d-flex flex-column align-items-center justify-content-space-between">
 										<div class="w-100 h-100 d-flex flex-column">
 											<div class="story-timelines grid-3">
@@ -4471,7 +4473,7 @@
 											</div>
 											<div class="d-flex flex-row align-items-center gap-4 z-index-10">
 												<a href="#" class="product-img w-20 p-2 radius-all-small aspect-ratio-1x1 bg-secondary-color d-flex align-items-center">
-													<img src="./assets/media/images/Frame-19-300x300.webp" alt="" class="w-100" />
+													<img src="./assets/media/images/homepage/Frame-19-300x300.webp" alt="" class="w-100" />
 												</a>
 												<a href="#" class="product-name radius-all-full secondary-color w-100 ellipsis-1 py-2 px-3 txt-size-normal font-weight-bold">لپ تاپ مک بوک ایر اپل مدل MacBook Air MRYT</a>
 												<div class="modal-close">
@@ -4503,7 +4505,7 @@
 									<span class="shadow-1"></span>
 									<span class="shadow-2"></span>
 									<span class="shadow-3"></span>
-									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/14.webp" alt="" />
+									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/homepage/14.webp" alt="" />
 									<div class="w-100 h-100 position-absolute top-0 right-0 px-3 py-3 d-flex flex-column align-items-center justify-content-space-between">
 										<div class="w-100 h-100 d-flex flex-column">
 											<div class="story-timelines grid-3">
@@ -4513,7 +4515,7 @@
 											</div>
 											<div class="d-flex flex-row align-items-center gap-4 z-index-10">
 												<a href="#" class="product-img w-20 p-2 radius-all-small aspect-ratio-1x1 bg-secondary-color d-flex align-items-center">
-													<img src="./assets/media/images/Frame-19-300x300.webp" alt="" class="w-100" />
+													<img src="./assets/media/images/homepage/Frame-19-300x300.webp" alt="" class="w-100" />
 												</a>
 												<a href="#" class="product-name radius-all-full secondary-color w-100 ellipsis-1 py-2 px-3 txt-size-normal font-weight-bold">لپ تاپ مک بوک ایر اپل مدل MacBook Air MRYT</a>
 												<div class="modal-close">
@@ -4544,7 +4546,7 @@
 									<span class="shadow-1"></span>
 									<span class="shadow-2"></span>
 									<span class="shadow-3"></span>
-									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/14.webp" alt="" />
+									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/homepage/14.webp" alt="" />
 									<div class="w-100 h-100 position-absolute top-0 right-0 px-3 py-3 d-flex flex-column align-items-center justify-content-space-between">
 										<div class="w-100 h-100 d-flex flex-column">
 											<div class="story-timelines grid-3">
@@ -4554,7 +4556,7 @@
 											</div>
 											<div class="d-flex flex-row align-items-center gap-4 z-index-10">
 												<a href="#" class="product-img w-20 p-2 radius-all-small aspect-ratio-1x1 bg-secondary-color d-flex align-items-center">
-													<img src="./assets/media/images/Frame-19-300x300.webp" alt="" class="w-100" />
+													<img src="./assets/media/images/homepage/Frame-19-300x300.webp" alt="" class="w-100" />
 												</a>
 												<a href="#" class="product-name radius-all-full secondary-color w-100 ellipsis-1 py-2 px-3 txt-size-normal font-weight-bold">لپ تاپ مک بوک ایر اپل مدل MacBook Air MRYT</a>
 												<div class="modal-close">
@@ -4595,7 +4597,7 @@
 									<span class="shadow-1"></span>
 									<span class="shadow-2"></span>
 									<span class="shadow-3"></span>
-									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/baner 2.webp" alt="" />
+									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/homepage/baner 2.webp" alt="" />
 									<div class="w-100 h-100 position-absolute top-0 right-0 px-3 py-3 d-flex flex-column align-items-center justify-content-space-between">
 										<div class="w-100 h-100 d-flex flex-column">
 											<div class="story-timelines grid-3">
@@ -4605,7 +4607,7 @@
 											</div>
 											<div class="d-flex flex-row align-items-center gap-4 z-index-10">
 												<a href="#" class="product-img w-20 p-2 radius-all-small aspect-ratio-1x1 bg-secondary-color d-flex align-items-center">
-													<img src="./assets/media/images/Frame-19-300x300.webp" alt="" class="w-100" />
+													<img src="./assets/media/images/homepage/Frame-19-300x300.webp" alt="" class="w-100" />
 												</a>
 												<a href="#" class="product-name radius-all-full secondary-color w-100 ellipsis-1 py-2 px-3 txt-size-normal font-weight-bold">لپ تاپ مک بوک ایر اپل مدل MacBook Air MRYT</a>
 												<div class="modal-close">
@@ -4637,7 +4639,7 @@
 									<span class="shadow-1"></span>
 									<span class="shadow-2"></span>
 									<span class="shadow-3"></span>
-									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/14.webp" alt="" />
+									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/homepage/14.webp" alt="" />
 									<div class="w-100 h-100 position-absolute top-0 right-0 px-3 py-3 d-flex flex-column align-items-center justify-content-space-between">
 										<div class="w-100 h-100 d-flex flex-column">
 											<div class="story-timelines grid-3">
@@ -4647,7 +4649,7 @@
 											</div>
 											<div class="d-flex flex-row align-items-center gap-4 z-index-10">
 												<a href="#" class="product-img w-20 p-2 radius-all-small aspect-ratio-1x1 bg-secondary-color d-flex align-items-center">
-													<img src="./assets/media/images/Frame-19-300x300.webp" alt="" class="w-100" />
+													<img src="./assets/media/images/homepage/Frame-19-300x300.webp" alt="" class="w-100" />
 												</a>
 												<a href="#" class="product-name radius-all-full secondary-color w-100 ellipsis-1 py-2 px-3 txt-size-normal font-weight-bold">لپ تاپ مک بوک ایر اپل مدل MacBook Air MRYT</a>
 												<div class="modal-close">
@@ -4678,7 +4680,7 @@
 									<span class="shadow-1"></span>
 									<span class="shadow-2"></span>
 									<span class="shadow-3"></span>
-									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/14.webp" alt="" />
+									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/homepage/14.webp" alt="" />
 									<div class="w-100 h-100 position-absolute top-0 right-0 px-3 py-3 d-flex flex-column align-items-center justify-content-space-between">
 										<div class="w-100 h-100 d-flex flex-column">
 											<div class="story-timelines grid-3">
@@ -4688,7 +4690,7 @@
 											</div>
 											<div class="d-flex flex-row align-items-center gap-4 z-index-10">
 												<a href="#" class="product-img w-20 p-2 radius-all-small aspect-ratio-1x1 bg-secondary-color d-flex align-items-center">
-													<img src="./assets/media/images/Frame-19-300x300.webp" alt="" class="w-100" />
+													<img src="./assets/media/images/homepage/Frame-19-300x300.webp" alt="" class="w-100" />
 												</a>
 												<a href="#" class="product-name radius-all-full secondary-color w-100 ellipsis-1 py-2 px-3 txt-size-normal font-weight-bold">لپ تاپ مک بوک ایر اپل مدل MacBook Air MRYT</a>
 												<div class="modal-close">
@@ -4729,7 +4731,7 @@
 									<span class="shadow-1"></span>
 									<span class="shadow-2"></span>
 									<span class="shadow-3"></span>
-									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/baner 2.webp" alt="" />
+									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/homepage/baner 2.webp" alt="" />
 									<div class="w-100 h-100 position-absolute top-0 right-0 px-3 py-3 d-flex flex-column align-items-center justify-content-space-between">
 										<div class="w-100 h-100 d-flex flex-column">
 											<div class="story-timelines grid-3">
@@ -4739,7 +4741,7 @@
 											</div>
 											<div class="d-flex flex-row align-items-center gap-4 z-index-10">
 												<a href="#" class="product-img w-20 p-2 radius-all-small aspect-ratio-1x1 bg-secondary-color d-flex align-items-center">
-													<img src="./assets/media/images/Frame-19-300x300.webp" alt="" class="w-100" />
+													<img src="./assets/media/images/homepage/Frame-19-300x300.webp" alt="" class="w-100" />
 												</a>
 												<a href="#" class="product-name radius-all-full secondary-color w-100 ellipsis-1 py-2 px-3 txt-size-normal font-weight-bold">لپ تاپ مک بوک ایر اپل مدل MacBook Air MRYT</a>
 												<div class="modal-close">
@@ -4771,7 +4773,7 @@
 									<span class="shadow-1"></span>
 									<span class="shadow-2"></span>
 									<span class="shadow-3"></span>
-									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/14.webp" alt="" />
+									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/homepage/14.webp" alt="" />
 									<div class="w-100 h-100 position-absolute top-0 right-0 px-3 py-3 d-flex flex-column align-items-center justify-content-space-between">
 										<div class="w-100 h-100 d-flex flex-column">
 											<div class="story-timelines grid-3">
@@ -4781,7 +4783,7 @@
 											</div>
 											<div class="d-flex flex-row align-items-center gap-4 z-index-10">
 												<a href="#" class="product-img w-20 p-2 radius-all-small aspect-ratio-1x1 bg-secondary-color d-flex align-items-center">
-													<img src="./assets/media/images/Frame-19-300x300.webp" alt="" class="w-100" />
+													<img src="./assets/media/images/homepage/Frame-19-300x300.webp" alt="" class="w-100" />
 												</a>
 												<a href="#" class="product-name radius-all-full secondary-color w-100 ellipsis-1 py-2 px-3 txt-size-normal font-weight-bold">لپ تاپ مک بوک ایر اپل مدل MacBook Air MRYT</a>
 												<div class="modal-close">
@@ -4812,7 +4814,7 @@
 									<span class="shadow-1"></span>
 									<span class="shadow-2"></span>
 									<span class="shadow-3"></span>
-									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/14.webp" alt="" />
+									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/homepage/14.webp" alt="" />
 									<div class="w-100 h-100 position-absolute top-0 right-0 px-3 py-3 d-flex flex-column align-items-center justify-content-space-between">
 										<div class="w-100 h-100 d-flex flex-column">
 											<div class="story-timelines grid-3">
@@ -4822,7 +4824,7 @@
 											</div>
 											<div class="d-flex flex-row align-items-center gap-4 z-index-10">
 												<a href="#" class="product-img w-20 p-2 radius-all-small aspect-ratio-1x1 bg-secondary-color d-flex align-items-center">
-													<img src="./assets/media/images/Frame-19-300x300.webp" alt="" class="w-100" />
+													<img src="./assets/media/images/homepage/Frame-19-300x300.webp" alt="" class="w-100" />
 												</a>
 												<a href="#" class="product-name radius-all-full secondary-color w-100 ellipsis-1 py-2 px-3 txt-size-normal font-weight-bold">لپ تاپ مک بوک ایر اپل مدل MacBook Air MRYT</a>
 												<div class="modal-close">
@@ -4863,7 +4865,7 @@
 									<span class="shadow-1"></span>
 									<span class="shadow-2"></span>
 									<span class="shadow-3"></span>
-									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/baner 2.webp" alt="" />
+									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/homepage/baner 2.webp" alt="" />
 									<div class="w-100 h-100 position-absolute top-0 right-0 px-3 py-3 d-flex flex-column align-items-center justify-content-space-between">
 										<div class="w-100 h-100 d-flex flex-column">
 											<div class="story-timelines grid-3">
@@ -4873,7 +4875,7 @@
 											</div>
 											<div class="d-flex flex-row align-items-center gap-4 z-index-10">
 												<a href="#" class="product-img w-20 p-2 radius-all-small aspect-ratio-1x1 bg-secondary-color d-flex align-items-center">
-													<img src="./assets/media/images/Frame-19-300x300.webp" alt="" class="w-100" />
+													<img src="./assets/media/images/homepage/Frame-19-300x300.webp" alt="" class="w-100" />
 												</a>
 												<a href="#" class="product-name radius-all-full secondary-color w-100 ellipsis-1 py-2 px-3 txt-size-normal font-weight-bold">لپ تاپ مک بوک ایر اپل مدل MacBook Air MRYT</a>
 												<div class="modal-close">
@@ -4905,7 +4907,7 @@
 									<span class="shadow-1"></span>
 									<span class="shadow-2"></span>
 									<span class="shadow-3"></span>
-									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/14.webp" alt="" />
+									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/homepage/14.webp" alt="" />
 									<div class="w-100 h-100 position-absolute top-0 right-0 px-3 py-3 d-flex flex-column align-items-center justify-content-space-between">
 										<div class="w-100 h-100 d-flex flex-column">
 											<div class="story-timelines grid-3">
@@ -4915,7 +4917,7 @@
 											</div>
 											<div class="d-flex flex-row align-items-center gap-4 z-index-10">
 												<a href="#" class="product-img w-20 p-2 radius-all-small aspect-ratio-1x1 bg-secondary-color d-flex align-items-center">
-													<img src="./assets/media/images/Frame-19-300x300.webp" alt="" class="w-100" />
+													<img src="./assets/media/images/homepage/Frame-19-300x300.webp" alt="" class="w-100" />
 												</a>
 												<a href="#" class="product-name radius-all-full secondary-color w-100 ellipsis-1 py-2 px-3 txt-size-normal font-weight-bold">لپ تاپ مک بوک ایر اپل مدل MacBook Air MRYT</a>
 												<div class="modal-close">
@@ -4946,7 +4948,7 @@
 									<span class="shadow-1"></span>
 									<span class="shadow-2"></span>
 									<span class="shadow-3"></span>
-									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/14.webp" alt="" />
+									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/homepage/14.webp" alt="" />
 									<div class="w-100 h-100 position-absolute top-0 right-0 px-3 py-3 d-flex flex-column align-items-center justify-content-space-between">
 										<div class="w-100 h-100 d-flex flex-column">
 											<div class="story-timelines grid-3">
@@ -4956,7 +4958,7 @@
 											</div>
 											<div class="d-flex flex-row align-items-center gap-4 z-index-10">
 												<a href="#" class="product-img w-20 p-2 radius-all-small aspect-ratio-1x1 bg-secondary-color d-flex align-items-center">
-													<img src="./assets/media/images/Frame-19-300x300.webp" alt="" class="w-100" />
+													<img src="./assets/media/images/homepage/Frame-19-300x300.webp" alt="" class="w-100" />
 												</a>
 												<a href="#" class="product-name radius-all-full secondary-color w-100 ellipsis-1 py-2 px-3 txt-size-normal font-weight-bold">لپ تاپ مک بوک ایر اپل مدل MacBook Air MRYT</a>
 												<div class="modal-close">
@@ -4997,7 +4999,7 @@
 									<span class="shadow-1"></span>
 									<span class="shadow-2"></span>
 									<span class="shadow-3"></span>
-									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/baner 2.webp" alt="" />
+									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/homepage/baner 2.webp" alt="" />
 									<div class="w-100 h-100 position-absolute top-0 right-0 px-3 py-3 d-flex flex-column align-items-center justify-content-space-between">
 										<div class="w-100 h-100 d-flex flex-column">
 											<div class="story-timelines grid-3">
@@ -5007,7 +5009,7 @@
 											</div>
 											<div class="d-flex flex-row align-items-center gap-4 z-index-10">
 												<a href="#" class="product-img w-20 p-2 radius-all-small aspect-ratio-1x1 bg-secondary-color d-flex align-items-center">
-													<img src="./assets/media/images/Frame-19-300x300.webp" alt="" class="w-100" />
+													<img src="./assets/media/images/homepage/Frame-19-300x300.webp" alt="" class="w-100" />
 												</a>
 												<a href="#" class="product-name radius-all-full secondary-color w-100 ellipsis-1 py-2 px-3 txt-size-normal font-weight-bold">لپ تاپ مک بوک ایر اپل مدل MacBook Air MRYT</a>
 												<div class="modal-close">
@@ -5039,7 +5041,7 @@
 									<span class="shadow-1"></span>
 									<span class="shadow-2"></span>
 									<span class="shadow-3"></span>
-									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/14.webp" alt="" />
+									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/homepage/14.webp" alt="" />
 									<div class="w-100 h-100 position-absolute top-0 right-0 px-3 py-3 d-flex flex-column align-items-center justify-content-space-between">
 										<div class="w-100 h-100 d-flex flex-column">
 											<div class="story-timelines grid-3">
@@ -5049,7 +5051,7 @@
 											</div>
 											<div class="d-flex flex-row align-items-center gap-4 z-index-10">
 												<a href="#" class="product-img w-20 p-2 radius-all-small aspect-ratio-1x1 bg-secondary-color d-flex align-items-center">
-													<img src="./assets/media/images/Frame-19-300x300.webp" alt="" class="w-100" />
+													<img src="./assets/media/images/homepage/Frame-19-300x300.webp" alt="" class="w-100" />
 												</a>
 												<a href="#" class="product-name radius-all-full secondary-color w-100 ellipsis-1 py-2 px-3 txt-size-normal font-weight-bold">لپ تاپ مک بوک ایر اپل مدل MacBook Air MRYT</a>
 												<div class="modal-close">
@@ -5080,7 +5082,7 @@
 									<span class="shadow-1"></span>
 									<span class="shadow-2"></span>
 									<span class="shadow-3"></span>
-									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/14.webp" alt="" />
+									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/homepage/14.webp" alt="" />
 									<div class="w-100 h-100 position-absolute top-0 right-0 px-3 py-3 d-flex flex-column align-items-center justify-content-space-between">
 										<div class="w-100 h-100 d-flex flex-column">
 											<div class="story-timelines grid-3">
@@ -5090,7 +5092,7 @@
 											</div>
 											<div class="d-flex flex-row align-items-center gap-4 z-index-10">
 												<a href="#" class="product-img w-20 p-2 radius-all-small aspect-ratio-1x1 bg-secondary-color d-flex align-items-center">
-													<img src="./assets/media/images/Frame-19-300x300.webp" alt="" class="w-100" />
+													<img src="./assets/media/images/homepage/Frame-19-300x300.webp" alt="" class="w-100" />
 												</a>
 												<a href="#" class="product-name radius-all-full secondary-color w-100 ellipsis-1 py-2 px-3 txt-size-normal font-weight-bold">لپ تاپ مک بوک ایر اپل مدل MacBook Air MRYT</a>
 												<div class="modal-close">
@@ -5131,7 +5133,7 @@
 									<span class="shadow-1"></span>
 									<span class="shadow-2"></span>
 									<span class="shadow-3"></span>
-									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/baner 2.webp" alt="" />
+									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/homepage/baner 2.webp" alt="" />
 									<div class="w-100 h-100 position-absolute top-0 right-0 px-3 py-3 d-flex flex-column align-items-center justify-content-space-between">
 										<div class="w-100 h-100 d-flex flex-column">
 											<div class="story-timelines grid-3">
@@ -5141,7 +5143,7 @@
 											</div>
 											<div class="d-flex flex-row align-items-center gap-4 z-index-10">
 												<a href="#" class="product-img w-20 p-2 radius-all-small aspect-ratio-1x1 bg-secondary-color d-flex align-items-center">
-													<img src="./assets/media/images/Frame-19-300x300.webp" alt="" class="w-100" />
+													<img src="./assets/media/images/homepage/Frame-19-300x300.webp" alt="" class="w-100" />
 												</a>
 												<a href="#" class="product-name radius-all-full secondary-color w-100 ellipsis-1 py-2 px-3 txt-size-normal font-weight-bold">لپ تاپ مک بوک ایر اپل مدل MacBook Air MRYT</a>
 												<div class="modal-close">
@@ -5173,7 +5175,7 @@
 									<span class="shadow-1"></span>
 									<span class="shadow-2"></span>
 									<span class="shadow-3"></span>
-									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/14.webp" alt="" />
+									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/homepage/14.webp" alt="" />
 									<div class="w-100 h-100 position-absolute top-0 right-0 px-3 py-3 d-flex flex-column align-items-center justify-content-space-between">
 										<div class="w-100 h-100 d-flex flex-column">
 											<div class="story-timelines grid-3">
@@ -5183,7 +5185,7 @@
 											</div>
 											<div class="d-flex flex-row align-items-center gap-4 z-index-10">
 												<a href="#" class="product-img w-20 p-2 radius-all-small aspect-ratio-1x1 bg-secondary-color d-flex align-items-center">
-													<img src="./assets/media/images/Frame-19-300x300.webp" alt="" class="w-100" />
+													<img src="./assets/media/images/homepage/Frame-19-300x300.webp" alt="" class="w-100" />
 												</a>
 												<a href="#" class="product-name radius-all-full secondary-color w-100 ellipsis-1 py-2 px-3 txt-size-normal font-weight-bold">لپ تاپ مک بوک ایر اپل مدل MacBook Air MRYT</a>
 												<div class="modal-close">
@@ -5214,7 +5216,7 @@
 									<span class="shadow-1"></span>
 									<span class="shadow-2"></span>
 									<span class="shadow-3"></span>
-									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/14.webp" alt="" />
+									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/homepage/14.webp" alt="" />
 									<div class="w-100 h-100 position-absolute top-0 right-0 px-3 py-3 d-flex flex-column align-items-center justify-content-space-between">
 										<div class="w-100 h-100 d-flex flex-column">
 											<div class="story-timelines grid-3">
@@ -5224,7 +5226,7 @@
 											</div>
 											<div class="d-flex flex-row align-items-center gap-4 z-index-10">
 												<a href="#" class="product-img w-20 p-2 radius-all-small aspect-ratio-1x1 bg-secondary-color d-flex align-items-center">
-													<img src="./assets/media/images/Frame-19-300x300.webp" alt="" class="w-100" />
+													<img src="./assets/media/images/homepage/Frame-19-300x300.webp" alt="" class="w-100" />
 												</a>
 												<a href="#" class="product-name radius-all-full secondary-color w-100 ellipsis-1 py-2 px-3 txt-size-normal font-weight-bold">لپ تاپ مک بوک ایر اپل مدل MacBook Air MRYT</a>
 												<div class="modal-close">
@@ -5265,7 +5267,7 @@
 									<span class="shadow-1"></span>
 									<span class="shadow-2"></span>
 									<span class="shadow-3"></span>
-									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/baner 2.webp" alt="" />
+									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/homepage/baner 2.webp" alt="" />
 									<div class="w-100 h-100 position-absolute top-0 right-0 px-3 py-3 d-flex flex-column align-items-center justify-content-space-between">
 										<div class="w-100 h-100 d-flex flex-column">
 											<div class="story-timelines grid-3">
@@ -5275,7 +5277,7 @@
 											</div>
 											<div class="d-flex flex-row align-items-center gap-4 z-index-10">
 												<a href="#" class="product-img w-20 p-2 radius-all-small aspect-ratio-1x1 bg-secondary-color d-flex align-items-center">
-													<img src="./assets/media/images/Frame-19-300x300.webp" alt="" class="w-100" />
+													<img src="./assets/media/images/homepage/Frame-19-300x300.webp" alt="" class="w-100" />
 												</a>
 												<a href="#" class="product-name radius-all-full secondary-color w-100 ellipsis-1 py-2 px-3 txt-size-normal font-weight-bold">لپ تاپ مک بوک ایر اپل مدل MacBook Air MRYT</a>
 												<div class="modal-close">
@@ -5307,7 +5309,7 @@
 									<span class="shadow-1"></span>
 									<span class="shadow-2"></span>
 									<span class="shadow-3"></span>
-									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/14.webp" alt="" />
+									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/homepage/14.webp" alt="" />
 									<div class="w-100 h-100 position-absolute top-0 right-0 px-3 py-3 d-flex flex-column align-items-center justify-content-space-between">
 										<div class="w-100 h-100 d-flex flex-column">
 											<div class="story-timelines grid-3">
@@ -5317,7 +5319,7 @@
 											</div>
 											<div class="d-flex flex-row align-items-center gap-4 z-index-10">
 												<a href="#" class="product-img w-20 p-2 radius-all-small aspect-ratio-1x1 bg-secondary-color d-flex align-items-center">
-													<img src="./assets/media/images/Frame-19-300x300.webp" alt="" class="w-100" />
+													<img src="./assets/media/images/homepage/Frame-19-300x300.webp" alt="" class="w-100" />
 												</a>
 												<a href="#" class="product-name radius-all-full secondary-color w-100 ellipsis-1 py-2 px-3 txt-size-normal font-weight-bold">لپ تاپ مک بوک ایر اپل مدل MacBook Air MRYT</a>
 												<div class="modal-close">
@@ -5348,7 +5350,7 @@
 									<span class="shadow-1"></span>
 									<span class="shadow-2"></span>
 									<span class="shadow-3"></span>
-									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/14.webp" alt="" />
+									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/homepage/14.webp" alt="" />
 									<div class="w-100 h-100 position-absolute top-0 right-0 px-3 py-3 d-flex flex-column align-items-center justify-content-space-between">
 										<div class="w-100 h-100 d-flex flex-column">
 											<div class="story-timelines grid-3">
@@ -5358,7 +5360,7 @@
 											</div>
 											<div class="d-flex flex-row align-items-center gap-4 z-index-10">
 												<a href="#" class="product-img w-20 p-2 radius-all-small aspect-ratio-1x1 bg-secondary-color d-flex align-items-center">
-													<img src="./assets/media/images/Frame-19-300x300.webp" alt="" class="w-100" />
+													<img src="./assets/media/images/homepage/Frame-19-300x300.webp" alt="" class="w-100" />
 												</a>
 												<a href="#" class="product-name radius-all-full secondary-color w-100 ellipsis-1 py-2 px-3 txt-size-normal font-weight-bold">لپ تاپ مک بوک ایر اپل مدل MacBook Air MRYT</a>
 												<div class="modal-close">
@@ -5399,7 +5401,7 @@
 									<span class="shadow-1"></span>
 									<span class="shadow-2"></span>
 									<span class="shadow-3"></span>
-									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/baner 2.webp" alt="" />
+									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/homepage/baner 2.webp" alt="" />
 									<div class="w-100 h-100 position-absolute top-0 right-0 px-3 py-3 d-flex flex-column align-items-center justify-content-space-between">
 										<div class="w-100 h-100 d-flex flex-column">
 											<div class="story-timelines grid-3">
@@ -5409,7 +5411,7 @@
 											</div>
 											<div class="d-flex flex-row align-items-center gap-4 z-index-10">
 												<a href="#" class="product-img w-20 p-2 radius-all-small aspect-ratio-1x1 bg-secondary-color d-flex align-items-center">
-													<img src="./assets/media/images/Frame-19-300x300.webp" alt="" class="w-100" />
+													<img src="./assets/media/images/homepage/Frame-19-300x300.webp" alt="" class="w-100" />
 												</a>
 												<a href="#" class="product-name radius-all-full secondary-color w-100 ellipsis-1 py-2 px-3 txt-size-normal font-weight-bold">لپ تاپ مک بوک ایر اپل مدل MacBook Air MRYT</a>
 												<div class="modal-close">
@@ -5441,7 +5443,7 @@
 									<span class="shadow-1"></span>
 									<span class="shadow-2"></span>
 									<span class="shadow-3"></span>
-									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/14.webp" alt="" />
+									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/homepage/14.webp" alt="" />
 									<div class="w-100 h-100 position-absolute top-0 right-0 px-3 py-3 d-flex flex-column align-items-center justify-content-space-between">
 										<div class="w-100 h-100 d-flex flex-column">
 											<div class="story-timelines grid-3">
@@ -5451,7 +5453,7 @@
 											</div>
 											<div class="d-flex flex-row align-items-center gap-4 z-index-10">
 												<a href="#" class="product-img w-20 p-2 radius-all-small aspect-ratio-1x1 bg-secondary-color d-flex align-items-center">
-													<img src="./assets/media/images/Frame-19-300x300.webp" alt="" class="w-100" />
+													<img src="./assets/media/images/homepage/Frame-19-300x300.webp" alt="" class="w-100" />
 												</a>
 												<a href="#" class="product-name radius-all-full secondary-color w-100 ellipsis-1 py-2 px-3 txt-size-normal font-weight-bold">لپ تاپ مک بوک ایر اپل مدل MacBook Air MRYT</a>
 												<div class="modal-close">
@@ -5482,7 +5484,7 @@
 									<span class="shadow-1"></span>
 									<span class="shadow-2"></span>
 									<span class="shadow-3"></span>
-									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/14.webp" alt="" />
+									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/homepage/14.webp" alt="" />
 									<div class="w-100 h-100 position-absolute top-0 right-0 px-3 py-3 d-flex flex-column align-items-center justify-content-space-between">
 										<div class="w-100 h-100 d-flex flex-column">
 											<div class="story-timelines grid-3">
@@ -5492,7 +5494,7 @@
 											</div>
 											<div class="d-flex flex-row align-items-center gap-4 z-index-10">
 												<a href="#" class="product-img w-20 p-2 radius-all-small aspect-ratio-1x1 bg-secondary-color d-flex align-items-center">
-													<img src="./assets/media/images/Frame-19-300x300.webp" alt="" class="w-100" />
+													<img src="./assets/media/images/homepage/Frame-19-300x300.webp" alt="" class="w-100" />
 												</a>
 												<a href="#" class="product-name radius-all-full secondary-color w-100 ellipsis-1 py-2 px-3 txt-size-normal font-weight-bold">لپ تاپ مک بوک ایر اپل مدل MacBook Air MRYT</a>
 												<div class="modal-close">
@@ -5533,7 +5535,7 @@
 									<span class="shadow-1"></span>
 									<span class="shadow-2"></span>
 									<span class="shadow-3"></span>
-									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/baner 2.webp" alt="" />
+									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/homepage/baner 2.webp" alt="" />
 									<div class="w-100 h-100 position-absolute top-0 right-0 px-3 py-3 d-flex flex-column align-items-center justify-content-space-between">
 										<div class="w-100 h-100 d-flex flex-column">
 											<div class="story-timelines grid-3">
@@ -5543,7 +5545,7 @@
 											</div>
 											<div class="d-flex flex-row align-items-center gap-4 z-index-10">
 												<a href="#" class="product-img w-20 p-2 radius-all-small aspect-ratio-1x1 bg-secondary-color d-flex align-items-center">
-													<img src="./assets/media/images/Frame-19-300x300.webp" alt="" class="w-100" />
+													<img src="./assets/media/images/homepage/Frame-19-300x300.webp" alt="" class="w-100" />
 												</a>
 												<a href="#" class="product-name radius-all-full secondary-color w-100 ellipsis-1 py-2 px-3 txt-size-normal font-weight-bold">لپ تاپ مک بوک ایر اپل مدل MacBook Air MRYT</a>
 												<div class="modal-close">
@@ -5575,7 +5577,7 @@
 									<span class="shadow-1"></span>
 									<span class="shadow-2"></span>
 									<span class="shadow-3"></span>
-									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/14.webp" alt="" />
+									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/homepage/14.webp" alt="" />
 									<div class="w-100 h-100 position-absolute top-0 right-0 px-3 py-3 d-flex flex-column align-items-center justify-content-space-between">
 										<div class="w-100 h-100 d-flex flex-column">
 											<div class="story-timelines grid-3">
@@ -5585,7 +5587,7 @@
 											</div>
 											<div class="d-flex flex-row align-items-center gap-4 z-index-10">
 												<a href="#" class="product-img w-20 p-2 radius-all-small aspect-ratio-1x1 bg-secondary-color d-flex align-items-center">
-													<img src="./assets/media/images/Frame-19-300x300.webp" alt="" class="w-100" />
+													<img src="./assets/media/images/homepage/Frame-19-300x300.webp" alt="" class="w-100" />
 												</a>
 												<a href="#" class="product-name radius-all-full secondary-color w-100 ellipsis-1 py-2 px-3 txt-size-normal font-weight-bold">لپ تاپ مک بوک ایر اپل مدل MacBook Air MRYT</a>
 												<div class="modal-close">
@@ -5616,7 +5618,7 @@
 									<span class="shadow-1"></span>
 									<span class="shadow-2"></span>
 									<span class="shadow-3"></span>
-									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/14.webp" alt="" />
+									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/homepage/14.webp" alt="" />
 									<div class="w-100 h-100 position-absolute top-0 right-0 px-3 py-3 d-flex flex-column align-items-center justify-content-space-between">
 										<div class="w-100 h-100 d-flex flex-column">
 											<div class="story-timelines grid-3">
@@ -5626,7 +5628,7 @@
 											</div>
 											<div class="d-flex flex-row align-items-center gap-4 z-index-10">
 												<a href="#" class="product-img w-20 p-2 radius-all-small aspect-ratio-1x1 bg-secondary-color d-flex align-items-center">
-													<img src="./assets/media/images/Frame-19-300x300.webp" alt="" class="w-100" />
+													<img src="./assets/media/images/homepage/Frame-19-300x300.webp" alt="" class="w-100" />
 												</a>
 												<a href="#" class="product-name radius-all-full secondary-color w-100 ellipsis-1 py-2 px-3 txt-size-normal font-weight-bold">لپ تاپ مک بوک ایر اپل مدل MacBook Air MRYT</a>
 												<div class="modal-close">
@@ -5667,7 +5669,7 @@
 									<span class="shadow-1"></span>
 									<span class="shadow-2"></span>
 									<span class="shadow-3"></span>
-									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/baner 2.webp" alt="" />
+									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/homepage/baner 2.webp" alt="" />
 									<div class="w-100 h-100 position-absolute top-0 right-0 px-3 py-3 d-flex flex-column align-items-center justify-content-space-between">
 										<div class="w-100 h-100 d-flex flex-column">
 											<div class="story-timelines grid-3">
@@ -5677,7 +5679,7 @@
 											</div>
 											<div class="d-flex flex-row align-items-center gap-4 z-index-10">
 												<a href="#" class="product-img w-20 p-2 radius-all-small aspect-ratio-1x1 bg-secondary-color d-flex align-items-center">
-													<img src="./assets/media/images/Frame-19-300x300.webp" alt="" class="w-100" />
+													<img src="./assets/media/images/homepage/Frame-19-300x300.webp" alt="" class="w-100" />
 												</a>
 												<a href="#" class="product-name radius-all-full secondary-color w-100 ellipsis-1 py-2 px-3 txt-size-normal font-weight-bold">لپ تاپ مک بوک ایر اپل مدل MacBook Air MRYT</a>
 												<div class="modal-close">
@@ -5709,7 +5711,7 @@
 									<span class="shadow-1"></span>
 									<span class="shadow-2"></span>
 									<span class="shadow-3"></span>
-									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/14.webp" alt="" />
+									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/homepage/14.webp" alt="" />
 									<div class="w-100 h-100 position-absolute top-0 right-0 px-3 py-3 d-flex flex-column align-items-center justify-content-space-between">
 										<div class="w-100 h-100 d-flex flex-column">
 											<div class="story-timelines grid-3">
@@ -5719,7 +5721,7 @@
 											</div>
 											<div class="d-flex flex-row align-items-center gap-4 z-index-10">
 												<a href="#" class="product-img w-20 p-2 radius-all-small aspect-ratio-1x1 bg-secondary-color d-flex align-items-center">
-													<img src="./assets/media/images/Frame-19-300x300.webp" alt="" class="w-100" />
+													<img src="./assets/media/images/homepage/Frame-19-300x300.webp" alt="" class="w-100" />
 												</a>
 												<a href="#" class="product-name radius-all-full secondary-color w-100 ellipsis-1 py-2 px-3 txt-size-normal font-weight-bold">لپ تاپ مک بوک ایر اپل مدل MacBook Air MRYT</a>
 												<div class="modal-close">
@@ -5750,7 +5752,7 @@
 									<span class="shadow-1"></span>
 									<span class="shadow-2"></span>
 									<span class="shadow-3"></span>
-									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/14.webp" alt="" />
+									<img class="content radius-all-medium bg-black-color object-contain w-100 h-100" src="./assets/media/images/homepage/14.webp" alt="" />
 									<div class="w-100 h-100 position-absolute top-0 right-0 px-3 py-3 d-flex flex-column align-items-center justify-content-space-between">
 										<div class="w-100 h-100 d-flex flex-column">
 											<div class="story-timelines grid-3">
@@ -5760,7 +5762,7 @@
 											</div>
 											<div class="d-flex flex-row align-items-center gap-4 z-index-10">
 												<a href="#" class="product-img w-20 p-2 radius-all-small aspect-ratio-1x1 bg-secondary-color d-flex align-items-center">
-													<img src="./assets/media/images/Frame-19-300x300.webp" alt="" class="w-100" />
+													<img src="./assets/media/images/homepage/Frame-19-300x300.webp" alt="" class="w-100" />
 												</a>
 												<a href="#" class="product-name radius-all-full secondary-color w-100 ellipsis-1 py-2 px-3 txt-size-normal font-weight-bold">لپ تاپ مک بوک ایر اپل مدل MacBook Air MRYT</a>
 												<div class="modal-close">

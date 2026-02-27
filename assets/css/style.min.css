@@ -1452,6 +1452,11 @@ footer .top-line {
   --space-factor: 0.25rem;
 }
 
+header #search {
+  width: 400px;
+  border: unset;
+}
+
 /* header */
 header .logo {
   width: 115px;
