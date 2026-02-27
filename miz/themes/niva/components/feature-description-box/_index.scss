@@ -9,10 +9,10 @@
     }
 
     .description{
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-line-clamp: 4;
-        -webkit-box-orient: vertical;
         @extend .secondary-text-color, .txt-size-big, .font-weight-bold;
+
+        &.ellipsis-4{
+            @extend .cursor-pointer;
+        }
     }
 }

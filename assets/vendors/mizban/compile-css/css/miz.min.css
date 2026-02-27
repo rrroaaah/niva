@@ -595,7 +595,7 @@ html {
   background-color: var(--unCommon);
 }
 
-.bg-transparent-color, .modal-container, .modal-container.share-modal, .modal-container.cart-modal, .modal-container.story-modal, .accordion-group.comment-show-more .accordion {
+.bg-transparent-color, .qty .qty-value, .modal-container, .modal-container.share-modal, .modal-container.cart-modal, .modal-container.story-modal, .accordion-group.comment-show-more .accordion {
   background-color: var(--transparent);
 }
 
@@ -1373,7 +1373,7 @@ html {
   border-inline-end-style: none;
 }
 
-.border-style-none {
+.border-style-none, .qty .qty-value {
   border-top-style: none;
   border-left-style: none;
   border-bottom-style: none;
@@ -8631,7 +8631,7 @@ html {
   margin-right: 0.25rem;
 }
 
-.mx-2 {
+.mx-2, .qty .qty-value {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
@@ -11293,7 +11293,7 @@ html {
   text-transform: capitalize;
 }
 
-.txt-align-center, .range-slider, .range-slider .values .value-min, .range-slider .values .value-max, .forign-product .wrapper-sale-btn .sale-btn, .variable-product .container-variation-color .variation-color-text, .badge-wrapper .badge, .badge-wrapper .badge-inside, .rating-card .card-footer .comments-number .description {
+.txt-align-center, .range-slider, .range-slider .values .value-min, .range-slider .values .value-max, .qty .qty-value, .forign-product .wrapper-sale-btn .sale-btn, .variable-product .container-variation-color .variation-color-text, .badge-wrapper .badge, .badge-wrapper .badge-inside, .rating-card .card-footer .comments-number .description {
   text-align: center;
 }
 
@@ -31141,7 +31141,7 @@ html {
   cursor: default;
 }
 
-.cursor-pointer, .button-date, .dropdown .dropdown-box, .range-slider .range-wrapper .range-min::-webkit-slider-thumb, .range-slider .range-wrapper .range-min::-moz-range-thumb, .range-slider .range-wrapper .range-max::-webkit-slider-thumb, .range-slider .range-wrapper .range-max::-moz-range-thumb, .qty .qty-plus, .qty .qty-minus, .modal-toggle, .modal-container .modal-close, .modal-container.share-modal .modal-close, .modal-container.video-modal .modal-close, .modal-container.cart-modal .modal-close, .modal-container.reviewsubmit .modal-close, .badge-wrapper, .commodity-pack, .slider .slider-arrows .slider-arrow-next, .slider .slider-arrows .slider-arrow-prev, .slider .slider-toggles .slider-toggle, .product-gallery.slider .slider-toggles .slider-toggle, .product-qa .question-container .btn, .product-comment .information-comment .btn, .product-comment .features-container .show-more, .modal-container.story-modal .modal-close, .product-category, .product-card .card-body .btn-add-to-cart, .feature.checkpay, .accordion-group .accordion .accordion-box .accordion-header {
+.cursor-pointer, .button-date, .dropdown .dropdown-box, .range-slider .range-wrapper .range-min::-webkit-slider-thumb, .range-slider .range-wrapper .range-min::-moz-range-thumb, .range-slider .range-wrapper .range-max::-webkit-slider-thumb, .range-slider .range-wrapper .range-max::-moz-range-thumb, .qty .qty-plus, .qty .qty-minus, .modal-toggle, .modal-container .modal-close, .modal-container.share-modal .modal-close, .modal-container.video-modal .modal-close, .modal-container.cart-modal .modal-close, .modal-container.reviewsubmit .modal-close, .badge-wrapper, .commodity-pack, .slider .slider-arrows .slider-arrow-next, .slider .slider-arrows .slider-arrow-prev, .slider .slider-toggles .slider-toggle, .product-gallery.slider .slider-toggles .slider-toggle, .product-qa .question-container .btn, .product-comment .information-comment .btn, .product-comment .features-container .show-more, .modal-container.story-modal .modal-close, .product-category, .product-card .card-body .btn-add-to-cart, .feature.checkpay, .feature-description-box.text-type .description.ellipsis-4, .accordion-group .accordion .accordion-box .accordion-header {
   cursor: pointer;
 }
 
@@ -31466,13 +31466,6 @@ html {
 .accordion-group.scroll-accordion {
   max-height: 500px;
 }
-.feature-description-box.text-type .description {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-}
-
 .btn-percent .icon {
   width: 50%;
 }
@@ -32150,6 +32143,19 @@ img {
   opacity: 1;
 }
 
+.like-box .positive, .like-box .negative {
+  cursor: pointer;
+}
+.like-box i {
+  transition: 0.3ms ease;
+}
+.like-box .btn.active.positive i {
+  color: #22c55e;
+}
+.like-box .btn.active.negative i {
+  color: #ef4444;
+}
+
 .slider-frame {
   overflow: hidden;
   height: 2rem; /* ارتفاع کافی برای h3 */
@@ -32203,8 +32209,23 @@ img {
     transform: scale(0);
   }
 }
-.hide-submenu {
-  transform: translateY(-100%) !important;
+header .secondary-part {
+  transform: translateY(0%);
+  box-shadow: 0px 6px 7px 0px rgba(135, 145, 172, 0.07);
+  z-index: 99;
+  transition: 1s ease;
+}
+
+header .secondary-part.hide-submenu {
+  transform: translateY(-100%);
+}
+
+header .container:has(.secondary-part.hide-submenu) {
+  height: var(--height-primary-part);
+}
+
+header .container {
+  transition: 1s ease;
 }
 
 .banner .cantainer-image .image-product {
